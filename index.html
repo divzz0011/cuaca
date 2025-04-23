@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cuaca Hari Ini</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <div class="weather-card">
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="modeToggle" onclick="toggleMode()" />
+          <span class="slider"></span>
+        </label>
+        <span class="toggle-label">Dark Mode</span>
+      </div>
+      <h1>🌤️ Cuaca Hari Ini</h1>
+      <input type="text" id="cityInput" placeholder="Masukkan nama kota..." />
+      <button onclick="getWeather()">Cek Cuaca</button>
+      <div id="weatherResult" class="weather-result"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
